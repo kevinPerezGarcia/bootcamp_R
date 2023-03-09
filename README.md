@@ -9,7 +9,6 @@
 ## Adchivos adjuntos:
 
 * brochure.pdf
-* cronograma.pdf
 
 ## Contenido y agenda:
 

@@ -52,5 +52,84 @@
     name[puntuacionBaja]
 
 # operaciones aritméticas con vectores ------------------------------------
+    
+  # entre un vector y un escalar
+    
+    # suma
+      punctuation + 2
+    
+    # resta
+      punctuation - 2
+  
+    # multiplicación
+      punctuation * 2
+      
+    # divisíón
+      punctuation / 2
+    
+  # entre vectores
+      
+        # vector a operar
+          puntuacionPropia <- c(5,6,6,5)
+      
+    # suma de vectores
+      puntuacionPropia + punctuation
+    
+    # resta de vectores
+      punctuation - puntuacionPropia
+      
+    # multiplicaccion de vectores
+      punctuation * puntuacionPropia
+      
+    # división de vectores
+      punctuation / puntuacionPropia
+      
+# functions ---------------------------------------------------------------
 
+# mean function
+  x <- c(2,-2,30,4,8,12)
+  print(mean(x))
+
+  # Desafío
+    y <- c(12,80,-10,-76)
+    print(mean(y))
+    
+# median
+  x <- c(2,-2,30,4,8,12)
+  print(median(x))
+  
+    # Desafío
+      y <- c(12,80,-10,-76)
+      print(median(y))
+      
+# mode function creating
+  
+  get_mode <- function(f) {
+    uf <- unique(f)
+    tab <- tabulate(match(f,uf))
+    uf[tab == max(tab)]
+  }
+  
+  x <- c(2,-5,45,13,-5)
+  print(get_mode(x))
+  
+  x <- c(2,-5,45,13,-5,13,45)
+  get_mode(x)
+  
+  y <- c("cat", "dog", "cat", "pig")
+  get_mode(y)
+  
+# maximun
+  x <- c(2,-5,45,13,-5,13,45)
+  max(x)  
+
+# minimum
+  x <- c(2,-5,45,13,-5,13,45)
+  min(x)    
+
+# range
+  x <- c(2,-5,45,13,-5,13,45)
+  range(x)
+  
+  max(x) - min(x)
   
