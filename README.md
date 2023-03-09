@@ -20,7 +20,10 @@
     1. crear variables
 1. Estructura y manejo de Datos:
     1. vectores
-    1. matrices
+    
+        Enlace: https://youtu.be/JOMcFZkzS5E
+
+    2. matrices
     1. factores
     1. dataframes
     1. listas
