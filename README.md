@@ -26,6 +26,8 @@
         * Tema: Lenguaje R, una experiencia en el procesamiento de información presupuestal
         * Fuente: https://www.youtube.com/watch?v=eBmU29D_IG4
     4. 09-Mar dataframes
+        * [Teoría](https://www.youtube.com/watch?v=oZz8Q7kq2LQ)
+        * [Laboratorio](https://www.youtube.com/watch?v=exRpDn016ig)
     1. 14-Mar listas. Asesoría en vivo
     1. 16-Mar instalación de paquetes
 1. 21-Mar Importación de Datos
@@ -48,3 +50,4 @@
     * v1.0.1-HOTFIX
     * v1.0.0-RELEASE
     * v2.1.0-WORKING
+    * v2.4.0-WORKING
