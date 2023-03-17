@@ -9,6 +9,7 @@
 ## Adchivos adjuntos
 
 * brochure.pdf
+* trabajo_final/trabajo_final.pdf
 
 ## Contenido y agenda
 
@@ -36,7 +37,7 @@
 ### Clases sincrónicas
 
 * 07-Mar. [Lenguaje R, una experiencia en el procesamiento de información presupuestal](https://www.youtube.com/watch?v=eBmU29D_IG4)
-* 14-Mar. Consultas sobre el curso y el proyecto de grado
+* 14-Mar. Consultas sobre el curso y el trabajo final
 * 16-Mar. Métodos estadísticos para modelos de pronóstico
 * 21-Mar. Métodos de segmentación de clientes con Machine Learning
 * 28-Mar. Gráficas
@@ -44,8 +45,15 @@
     1. gráfico de barras
     1. gráfico de cajas
     1. otros gráficos
-* 04-Abr. Exposición de proyectos (opcional)
+* 04-Abr. Exposición opcional del trabajo final
 * 14-Abr. Emisión de certificado (cierre del bootcamp de R)
+
+## Trabajo final
+
+* Documento: *trabajo_final/trabajo_final.pdf*
+* Base de datos: *games.csv*, esta base de datos es una de tres que conforman una más grande: [_Game Recommendations on Steam_](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=users.csv).
+* Último día de entrega: 4 de abril
+* Modalidad de entrega: subir script o enlace github a classroom
 
 ## Historial de versiones
     * v0.0.1
@@ -56,3 +64,4 @@
     * v2.4.0-WORKING
     * v2.4.0-RELEASE
     * v2.4.1-HOTFIX
+    * v2.4.2-HOTFIX
