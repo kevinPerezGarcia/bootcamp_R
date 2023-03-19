@@ -26,7 +26,7 @@
     1. 07-Mar. factores
     1. 09-Mar. [dataframes](https://www.youtube.com/watch?v=oZz8Q7kq2LQ) ([Laboratorio](https://www.youtube.com/watch?v=exRpDn016ig))
     1. 14-Mar [listas](https://www.youtube.com/watch?v=KW9mOci_lgY) ([Laboratorio](https://www.youtube.com/watch?v=KpDRaKwnPlQ))
-    1. 16-Mar instalación de paquetes
+    1. 16-Mar [instalación de paquetes](https://www.youtube.com/watch?v=f2Z9uHCGnxg) ([Laboratorio](https://www.youtube.com/watch?v=CEZMxipH6yg))
 1. 21-Mar. Importación de Datos de Excel
 1. 23-Mar. Programación:
     1. funciones
@@ -67,3 +67,4 @@
     * v2.4.2-HOTFIX
     * v2.5.0-WORKING
     * v2.5.0-RELEASE
+    * v2.6.0-RELEASE
