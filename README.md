@@ -67,3 +67,4 @@
     * v2.4.2-HOTFIX
     * v2.5.0-WORKING
     * v2.5.0-RELEASE
+    * v2.6.0-RELEASE
