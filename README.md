@@ -61,6 +61,7 @@
     * v1.0.1-HOTFIX
     * v1.0.0-RELEASE
     * v2.1.0-WORKING
+    * v2.1.0-RELEASE
     * v2.4.0-WORKING
     * v2.4.0-RELEASE
     * v2.4.1-HOTFIX
