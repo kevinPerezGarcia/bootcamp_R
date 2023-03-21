@@ -21,7 +21,7 @@
     1. 21-Feb. tipos de data basic
     1. 23-Feb. variables
 1. Estructura y manejo de Datos:
-    1. 28-Feb. vectores
+    1. 28-Feb. [vectores](https://www.youtube.com/watch?v=JOMcFZkzS5E) ([Laboratorio](https://youtu.be/BeP_9zYCMZc))
     1. 02-Mar. matrices
     1. 07-Mar. factores
     1. 09-Mar. [dataframes](https://www.youtube.com/watch?v=oZz8Q7kq2LQ) ([Laboratorio](https://www.youtube.com/watch?v=exRpDn016ig))
