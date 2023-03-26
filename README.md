@@ -28,11 +28,7 @@
     1. 14-Mar [listas](https://www.youtube.com/watch?v=KW9mOci_lgY) ([Laboratorio](https://www.youtube.com/watch?v=KpDRaKwnPlQ))
     1. 16-Mar [instalación de paquetes](https://www.youtube.com/watch?v=f2Z9uHCGnxg) ([Laboratorio](https://www.youtube.com/watch?v=CEZMxipH6yg))
 1. 21-Mar. Importación de Datos de Excel
-1. 23-Mar. Programación:
-    1. funciones
-    1. sentencia if
-    1. bucle for
-    1. bucle white
+1. 23-Mar. Programación: funciones, estructuras de control secuenciales y cíclicas ([Laboratorio](https://www.youtube.com/watch?v=5MWZAPolKMs&ab_channel=Cecat4.0DSRP))
 
 ### Clases sincrónicas
 
@@ -69,3 +65,5 @@
     * v2.5.0-WORKING
     * v2.5.0-RELEASE
     * v2.6.0-RELEASE
+    * v4.0.0-WORKING
+    * v4.0.0-RELEASE
