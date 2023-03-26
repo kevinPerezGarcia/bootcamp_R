@@ -34,3 +34,6 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+
+# lab_files directories created by qmd
+*/*_lab_files
