@@ -1,0 +1,74 @@
+---
+title: "trabajo-final"
+author: "Kevin Perez Garcia"
+date: "4 de abril del 2023"
+toc: true
+format:
+  html:
+    html-math-method: katex
+    self-contained: true
+execute:
+  warning: false
+editor: visual
+---
+
+## Indicaciones
+
+Base de datos
+
+## Pregunta 1. Esctructura de datos
+
+1. Crear vectores con los títulos de la dataset.
+
+1. Crear vector numérico con el precio final de los videojuegos.
+
+1. Crear una condición lógica de precios bajos, ejemplo: precios menores a $10.99$.
+
+1. Sumar $5$ al vector creado.
+
+1. Dividir la puntuación entre $2$.
+
+1. Calcular la media, moda, max, min de los datos de tipo numérico. Verificar con la función *class*.
+
+1. Crear un dataframe de $13$ columnas con la base de dats y guardar en una nueva variable.
+
+1. Agregar filas y columnas a la matriz. Sugerencia: una column de $1$ y una fila de datos de un juego de tu preferencia.
+
+1. Agregar columna de $1$.
+
+1. Agregar fila con los datos de un video de tu preferencia.
+
+1. Eliminar filas y columnas de la matriz.
+
+1. Seleccionar los elementos de la matriz.
+
+1. Convertir la matriz en dataframe y asignas nombres a las columnas.
+
+1. Acceder a los datos del dataframe.
+
+1. Cambiar nombre de dataframe.
+
+1. Seleccionar un elemento del dataframe.
+
+## Pregunta 2. Importación de datos
+
+1. Importe datos desde excel y ordenelos con la función _order()_, de preferencia para la variable _Price_final_
+
+1. Mostrar el dataframe ordenado de manera ascenente y descendente
+
+1. Calcular el resumen estadístico de los datos con la función correspondiente
+
+1. Realizar las gráficas
+
+## Pregunta 3. Programación
+
+1. Implemente y evalúe una función que multiple dos vectores.
+
+1. Implemente y evalúe una función para la fórmula de baskara.
+
+3. Simulación
+
+  - Obtenga una muestra aleatoria normal, de cualquier tamaño, de media igual a $0$ y varianza igual a $1$.
+  - Para conocer el comportamiento aleatorio de la muestra,
+    - Calcule sus estadísticas.
+    - Genere gráficos.

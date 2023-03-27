@@ -1,0 +1,87 @@
+---
+title: "Laboratorio: Importar datos"
+author: "Kevin Pérez García"
+format: html
+toc: true
+editor: visual
+---
+
+## Inicialización del entorno
+
+### Paquetes
+
+-   **here**: rutas relativas
+-   **readxl**: importar datos de Excel
+-   **readr**: importar datos csv
+
+### Cargar paquetes
+
+```{r}
+paquetes <- c("here", "readxl", "readr")
+
+lapply(paquetes, library, character.only=TRUE)
+```
+
+### Rutas relativas a las bases de datos
+
+```{r}
+here_base_datos_A1 <- here("c3", "data_raw", "base_datos-A1.xlsx")
+here_base_datos_no_A1 <- here("c3", "data_raw", "base_datos-no_A1.xlsx")
+here_base_datos_csv <- here("c3", "data_raw", "base_datos_csv.csv")
+here_base_datos_csv_sinNombres <- here("c3", "data_raw", "base_datos_csv_sinNombres.csv")
+```
+
+## Importar datos
+
+### Desde Excel
+
+#### La base de datos se encuentra en la primera hoja Excel (*Hoja1*)
+
+1.  La base de datos empieza en la celda *A1*
+
+```{r}
+base_datos_primHoja_celdaA1 <- read_excel(path=here_base_datos_A1)
+base_datos_primHoja_celdaA1
+```
+
+2.  La base de datos empieza en una celda distinta a la celda *A1*
+
+```{r}
+base_datos_primHoja_celdaNoA1 <- read_excel(path=here_base_datos_no_A1,
+                                            range = 'B2:D16')
+base_datos_primHoja_celdaNoA1
+```
+
+#### La base de datos se encuentra en una hoja Excel que no sea la primera (*Hoja2*)
+
+1.  La base de datos empieza en la celda *A1*
+
+```{r}
+base_datos_hojaNoPrimera_celdaA1 <- read_excel(path = here_base_datos_A1,
+                                               sheet = 'Hoja2')
+base_datos_hojaNoPrimera_celdaA1
+```
+
+2.  La base de datos empieza en una celda distinta a la celda *A1*
+
+```{r}
+base_datos_hojaNoPrimera_celdaNoA1 <- read_excel(path = here_base_datos_no_A1,
+                                                 sheet = 'Hoja2',
+                                                 range = 'B2:D16')
+base_datos_hojaNoPrimera_celdaNoA1
+```
+
+### Desde un archivo *csv*
+
+#### Con nombres de las variables
+```{r}
+base_datos_csv <- read.csv(here_base_datos_csv)
+base_datos_csv
+```
+#### Sin nombres de las variables
+```{r}
+base_datos_csv_sinNombres <- read.csv(here_base_datos_csv_sinNombres,
+                                      col.names = c("pais", "anio", "esperanza de vida al nacer"))
+base_datos_csv_sinNombres
+```
+
