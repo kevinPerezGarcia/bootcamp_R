@@ -1,8 +1,0 @@
----
-title: "Importar datos de Excel"
-author: "Kevin Pérez García"
-format: html
-editor: visual
----
-
-
