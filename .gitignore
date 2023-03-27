@@ -35,7 +35,7 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
-# directories created by qmd
+# directories and files created by qmd
 */*_files
-*/images
+*/image
 *.html
