@@ -23,12 +23,12 @@
 1. Estructura y manejo de Datos:
     1. 28-Feb. [vectores](https://www.youtube.com/watch?v=JOMcFZkzS5E) ([Laboratorio](https://youtu.be/BeP_9zYCMZc))
     1. 02-Mar. [matrices](https://www.youtube.com/watch?v=yi0xGDerGqM&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=lwl0emso4Rs&ab_channel=Cecat4.0DSRP))
-    1. 07-Mar. factores
-    1. 09-Mar. [dataframes](https://www.youtube.com/watch?v=oZz8Q7kq2LQ) ([Laboratorio](https://www.youtube.com/watch?v=exRpDn016ig))
-    1. 14-Mar [listas](https://www.youtube.com/watch?v=KW9mOci_lgY) ([Laboratorio](https://www.youtube.com/watch?v=KpDRaKwnPlQ))
-    1. 16-Mar [instalación de paquetes](https://www.youtube.com/watch?v=f2Z9uHCGnxg) ([Laboratorio](https://www.youtube.com/watch?v=CEZMxipH6yg))
-1. 21-Mar. [Importación de Datos de Excel](https://www.youtube.com/watch?v=aRf_ss16wnI&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=yrbH8Pf5ClU&ab_channel=Cecat4.0DSRP))
-1. 23-Mar. Programación: funciones, estructuras de control secuenciales y cíclicas ([Laboratorio](https://www.youtube.com/watch?v=5MWZAPolKMs&ab_channel=Cecat4.0DSRP))
+    2. 07-Mar. [factores](https://www.youtube.com/watch?v=1aK4RP0rCy0&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=Ufb0PUH1dGA&ab_channel=Cecat4.0DSRP))
+    3. 09-Mar. [dataframes](https://www.youtube.com/watch?v=oZz8Q7kq2LQ) ([Laboratorio](https://www.youtube.com/watch?v=exRpDn016ig))
+    4. 14-Mar [listas](https://www.youtube.com/watch?v=KW9mOci_lgY) ([Laboratorio](https://www.youtube.com/watch?v=KpDRaKwnPlQ))
+    5. 16-Mar [instalación de paquetes](https://www.youtube.com/watch?v=f2Z9uHCGnxg) ([Laboratorio](https://www.youtube.com/watch?v=CEZMxipH6yg))
+2. 21-Mar. [Importación de Datos de Excel](https://www.youtube.com/watch?v=aRf_ss16wnI&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=yrbH8Pf5ClU&ab_channel=Cecat4.0DSRP))
+3. 23-Mar. Programación: funciones, estructuras de control secuenciales y cíclicas ([Laboratorio](https://www.youtube.com/watch?v=5MWZAPolKMs&ab_channel=Cecat4.0DSRP))
 
 ### Clases sincrónicas
 
@@ -60,6 +60,8 @@
   * v2.1.0-RELEASE
   * v2.2.0-WORKING
   * v2.2.0-RELEASE
+  * v2.3.0-WORKING
+  * v2.3.0-RELEASE
   * v2.4.0-WORKING
   * v2.4.0-RELEASE
   * v2.4.1-HOTFIX
