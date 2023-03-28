@@ -1,0 +1,96 @@
+---
+title: "Laboratorio: Factores"
+author: "Kevin Pérez García"
+format: html
+toc: TRUE
+editor: visual
+---
+
+## Creación
+
+### Dado un vector string
+
+```{r}
+dias_string <- c("viernes", "martes", "jueves", "lunes", "miércoles", "lunes", "lunes", "miércoles", "domingo", "sábado")
+
+dias_string_factor <- factor(dias_string)
+dias_string_factor
+class(dias_string_factor)
+mode(dias_string_factor)
+str(dias_string_factor)
+```
+
+Sus niveles son
+
+```{r}
+levels(dias_string_factor)
+```
+
+Sus etiquetas son
+
+```{r}
+labels(dias_string_factor)
+```
+
+### Dado un vector numérico entero
+
+```{r}
+dias_numero <- c(5,2,4,1,3,1,1,3,7,6)
+
+dias_numero_factor <- factor(dias_numero)
+dias_numero_factor
+```
+
+Sus niveles son
+
+```{r}
+levels(dias_numero_factor)
+```
+
+Sus etiquetas son
+
+```{r}
+labels(dias_numero_factor)
+```
+
+```{r}
+dias_numero_factor_etiqueta <- factor(dias_numero,
+                                      labels = c("Lunes", "Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"))
+
+dias_numero_factor_etiqueta
+```
+
+Sus niveles son
+
+```{r}
+levels(dias_numero_factor_etiqueta)
+```
+
+Sus etiquetas son
+
+```{r}
+labels(dias_numero_factor_etiqueta)
+```
+
+## Convertir factores a otros tipos de vectores
+
+### A vector numérico
+
+```{r}
+datos <- c(0,2,0,5,1,9,9,4)
+datos_factor <- factor(datos)
+datos_factor
+
+as.numeric(datos_factor)
+as.numeric(levels(datos_factor))[datos_factor]
+```
+
+### A vector string
+
+```{r}
+datos <- c("Junio","julio","Enero","Junio")
+datos_factor <- factor(datos)
+datos_factor
+
+as.character(datos_factor)
+```
