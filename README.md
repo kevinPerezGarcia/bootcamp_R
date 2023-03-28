@@ -16,13 +16,13 @@
 ### Clases asincrónicas
 
 1. Introducción
-    1. 21-Feb. instalación de R y RStudio
-    1. 21-Feb. uso de RStudio
-    1. 21-Feb. tipos de data basic
-    1. 23-Feb. variables
+    1. 21-Feb. [introducción](https://www.youtube.com/watch?v=sq5ymlUaDws&ab_channel=Cecat4.0DSRP)
+    1. 21-Feb. [instalación de R y RStudio](https://www.youtube.com/watch?v=ievtZgQvep0&feature=youtu.be&ab_channel=Cecat4.0DSRP)
+    1. 21-Feb. [uso de RStudio](https://www.youtube.com/watch?v=ZdGByTGN2dc&ab_channel=Cecat4.0DSRP)
+    1. 23-Feb. [variables](https://www.youtube.com/watch?v=yXFsRata9zQ&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=uro7DjkdGeY&ab_channel=Cecat4.0DSRP))
 1. Estructura y manejo de Datos:
     1. 28-Feb. [vectores](https://www.youtube.com/watch?v=JOMcFZkzS5E) ([Laboratorio](https://youtu.be/BeP_9zYCMZc))
-    1. 02-Mar. matrices
+    1. 02-Mar. [matrices](https://www.youtube.com/watch?v=yi0xGDerGqM&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=lwl0emso4Rs&ab_channel=Cecat4.0DSRP))
     1. 07-Mar. factores
     1. 09-Mar. [dataframes](https://www.youtube.com/watch?v=oZz8Q7kq2LQ) ([Laboratorio](https://www.youtube.com/watch?v=exRpDn016ig))
     1. 14-Mar [listas](https://www.youtube.com/watch?v=KW9mOci_lgY) ([Laboratorio](https://www.youtube.com/watch?v=KpDRaKwnPlQ))
@@ -58,6 +58,8 @@
   * v1.0.0-RELEASE
   * v2.1.0-WORKING
   * v2.1.0-RELEASE
+  * v2.2.0-WORKING
+  * v2.2.0-RELEASE
   * v2.4.0-WORKING
   * v2.4.0-RELEASE
   * v2.4.1-HOTFIX
