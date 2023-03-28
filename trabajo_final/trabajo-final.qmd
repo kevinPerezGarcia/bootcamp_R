@@ -47,6 +47,7 @@ baskara(a=1, b=8, c=3)
 3.  Simulación
 
 *   Obtenga una muestra aleatoria normal, de cualquier tamaño, de media igual a $0$ y varianza igual a $1$.
+
 ```{r}
 set.seed(1)
 muestra_aleatoria <- rnorm(n=1000, mean=0, sd=1)
@@ -56,22 +57,56 @@ muestra_aleatoria[1:10]
 
 *   Para conocer el comportamiento aleatorio de la muestra,
     +   calcule sus estadísticas y
-
     +   genere gráficos.
 
 ### Base de datos a emplear en las siguientes dos últimas preguntas
 
-Utilice la base de datos _games.csv_ obtenida de [_Game Recommendations on Stream_](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam).
+Utilice la base de datos *games.csv* obtenida de [*Game Recommendations on Stream*](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam).
 
 ## Pregunta 2. Importación de datos
 
-1.  Importe datos desde excel y ordenelos con la función *order()*, de preferencia para la variable *Price_final*
+1.  Importe la base de datos
 
-2.  Mostrar el dataframe ordenado de manera ascenente y descendente
+* Inicializando el proyecto
+```{r}
+library(here)
+here_base_datos <- here("trabajo_final", "data_raw", "games.csv")
+```
 
-3.  Calcular el resumen estadístico de los datos con la función correspondiente
+```{r}
+library(readr)
+base_datos <- read.csv(here_base_datos)
+```
 
-4.  Realizar las gráficas
+2.  Ordene la base de datos ascendente y descendentemente respecto a la variable *Price_final*
+
+* Inspección de la variables *price_final*
+```{r}
+summary(base_datos$price_final)
+```
+
+
+* Orden inicial de la base de datos
+```{r}
+head(base_datos, n=10)
+```
+
+* Orden ascendente
+```{r}
+orden_ascendente <- order(base_datos$price_final)
+base_datos_ascendente <- base_datos[orden_ascendente,]
+head(base_datos_ascendente, n=10)
+```
+* Orden descendente
+```{r}
+orden_descendente <- order(-base_datos$price_final)
+base_datos_descendente <- base_datos[orden_descendente,]
+head(base_datos_descendente)
+```
+
+3.  Obtenga un resumen estadístico
+
+4.  Obtenga gráficas
 
 ## Pregunta 1. Esctructura de datos
 
