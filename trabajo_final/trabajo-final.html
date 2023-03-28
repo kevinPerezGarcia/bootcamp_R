@@ -21,6 +21,69 @@ width: 0.8em;
 margin: 0 0.8em 0.2em -1.6em;
 vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
 
 
@@ -2577,10 +2640,13 @@ vertical-align: -.125em;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#indicaciones" id="toc-indicaciones" class="nav-link active" data-scroll-target="#indicaciones">Indicaciones</a></li>
+  <li><a href="#pregunta-3.-programación" id="toc-pregunta-3.-programación" class="nav-link active" data-scroll-target="#pregunta-3.-programación">Pregunta 3. Programación</a></li>
+  <li><a href="#indicaciones-para-las-siguientes-dos-últimas-preguntas" id="toc-indicaciones-para-las-siguientes-dos-últimas-preguntas" class="nav-link" data-scroll-target="#indicaciones-para-las-siguientes-dos-últimas-preguntas">Indicaciones para las siguientes dos últimas preguntas</a>
+  <ul class="collapse">
+  <li><a href="#sobre-la-base-de-datos-a-emplear" id="toc-sobre-la-base-de-datos-a-emplear" class="nav-link" data-scroll-target="#sobre-la-base-de-datos-a-emplear">Sobre la base de datos a emplear</a></li>
+  </ul></li>
   <li><a href="#pregunta-1.-esctructura-de-datos" id="toc-pregunta-1.-esctructura-de-datos" class="nav-link" data-scroll-target="#pregunta-1.-esctructura-de-datos">Pregunta 1. Esctructura de datos</a></li>
   <li><a href="#pregunta-2.-importación-de-datos" id="toc-pregunta-2.-importación-de-datos" class="nav-link" data-scroll-target="#pregunta-2.-importación-de-datos">Pregunta 2. Importación de datos</a></li>
-  <li><a href="#pregunta-3.-programación" id="toc-pregunta-3.-programación" class="nav-link" data-scroll-target="#pregunta-3.-programación">Pregunta 3. Programación</a></li>
   </ul>
 </nav>
 </div>
@@ -2615,9 +2681,66 @@ vertical-align: -.125em;
 
 </header>
 
-<section id="indicaciones" class="level2">
-<h2 class="anchored" data-anchor-id="indicaciones">Indicaciones</h2>
-<p>Base de datos</p>
+<section id="pregunta-3.-programación" class="level2">
+<h2 class="anchored" data-anchor-id="pregunta-3.-programación">Pregunta 3. Programación</h2>
+<ol type="1">
+<li>Implemente y evalúe una función que multiple dos vectores.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementación</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>vector_multiplication <span class="ot">&lt;-</span> <span class="cf">function</span>(x,y) <span class="fu">return</span>(x<span class="sc">*</span>y)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluación</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">vector_multiplication</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">y =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  4 10 18</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Implemente y evalúe una función para la fórmula de Baskara.</li>
+</ol>
+<p>Las soluciones de una ecuación de segundo grado <span class="math display">ax^2+bx+c=0</span> donde <span class="math inline">a</span>, <span class="math inline">b</span> y <span class="math inline">c</span> son sus coeficientes con <span class="math inline">a \neq 0</span>, pueden obtenerse mediante la fórmula de Baskara <span class="math display">x_{1,2} = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementación</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>baskara <span class="ot">&lt;-</span> <span class="cf">function</span>(a,b,c){</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  x_1 <span class="ot">=</span> (<span class="sc">-</span>b <span class="sc">+</span> <span class="fu">sqrt</span>(b<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> <span class="dv">4</span><span class="sc">*</span>a<span class="sc">*</span>c) ) <span class="sc">/</span> <span class="dv">2</span><span class="sc">*</span>a</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  x_2 <span class="ot">=</span> (<span class="sc">-</span>b <span class="sc">-</span> <span class="fu">sqrt</span>(b<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> <span class="dv">4</span><span class="sc">*</span>a<span class="sc">*</span>c) ) <span class="sc">/</span> <span class="dv">2</span><span class="sc">*</span>a</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">c</span>(x_1, x_2))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluación</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">baskara</span>(<span class="at">a=</span><span class="dv">1</span>, <span class="at">b=</span><span class="dv">8</span>, <span class="at">c=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.3944487 -7.6055513</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Simulación</li>
+</ol>
+<ul>
+<li>Obtenga una muestra aleatoria normal, de cualquier tamaño, de media igual a <span class="math inline">0</span> y varianza igual a <span class="math inline">1</span>.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>muestra_aleatoria <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n=</span><span class="dv">1000</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Para conocer el comportamiento aleatorio de la muestra,
+<ul>
+<li><p>calcule sus estadísticas y</p></li>
+<li><p>genere gráficos.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="indicaciones-para-las-siguientes-dos-últimas-preguntas" class="level2">
+<h2 class="anchored" data-anchor-id="indicaciones-para-las-siguientes-dos-últimas-preguntas">Indicaciones para las siguientes dos últimas preguntas</h2>
+<section id="sobre-la-base-de-datos-a-emplear" class="level3">
+<h3 class="anchored" data-anchor-id="sobre-la-base-de-datos-a-emplear">Sobre la base de datos a emplear</h3>
+<p>Utilice la base de datos <em>games.csv</em> obtenida de <a href="https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam"><em>Game Recommendations on Stream</em></a></p>
+</section>
 </section>
 <section id="pregunta-1.-esctructura-de-datos" class="level2">
 <h2 class="anchored" data-anchor-id="pregunta-1.-esctructura-de-datos">Pregunta 1. Esctructura de datos</h2>
@@ -2648,22 +2771,6 @@ vertical-align: -.125em;
 <li><p>Calcular el resumen estadístico de los datos con la función correspondiente</p></li>
 <li><p>Realizar las gráficas</p></li>
 </ol>
-</section>
-<section id="pregunta-3.-programación" class="level2">
-<h2 class="anchored" data-anchor-id="pregunta-3.-programación">Pregunta 3. Programación</h2>
-<ol type="1">
-<li><p>Implemente y evalúe una función que multiple dos vectores.</p></li>
-<li><p>Implemente y evalúe una función para la fórmula de baskara.</p></li>
-<li><p>Simulación</p></li>
-</ol>
-<ul>
-<li>Obtenga una muestra aleatoria normal, de cualquier tamaño, de media igual a <span class="math inline">0</span> y varianza igual a <span class="math inline">1</span>.</li>
-<li>Para conocer el comportamiento aleatorio de la muestra,
-<ul>
-<li>Calcule sus estadísticas.</li>
-<li>Genere gráficos.</li>
-</ul></li>
-</ul>
 </section>
 
 </main>

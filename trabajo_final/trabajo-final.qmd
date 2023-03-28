@@ -12,63 +12,132 @@ execute:
 editor: visual
 ---
 
-## Indicaciones
+## Pregunta 3. Programación
 
-Base de datos
+1.  Implemente y evalúe una función que multiple dos vectores.
 
-## Pregunta 1. Esctructura de datos
+```{r}
+# Implementación
 
-1. Crear vectores con los títulos de la dataset.
+vector_multiplication <- function(x,y) return(x*y)
 
-1. Crear vector numérico con el precio final de los videojuegos.
+# Evaluación
 
-1. Crear una condición lógica de precios bajos, ejemplo: precios menores a $10.99$.
+vector_multiplication(x = c(1,2,3), y = c(4,5,6))
+```
 
-1. Sumar $5$ al vector creado.
+2.  Implemente y evalúe una función para la fórmula de Baskara.
 
-1. Dividir la puntuación entre $2$.
+Las soluciones de una ecuación de segundo grado $$ax^2+bx+c=0$$ donde $a$, $b$ y $c$ son sus coeficientes con $a \neq 0$, pueden obtenerse mediante la fórmula de Baskara $$x_{1,2} = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
-1. Calcular la media, moda, max, min de los datos de tipo numérico. Verificar con la función *class*.
+```{r}
+# Implementación
 
-1. Crear un dataframe de $13$ columnas con la base de dats y guardar en una nueva variable.
+baskara <- function(a,b,c){
+  x_1 = (-b + sqrt(b^2 - 4*a*c) ) / 2*a
+  x_2 = (-b - sqrt(b^2 - 4*a*c) ) / 2*a
+  return(c(x_1, x_2))
+}
 
-1. Agregar filas y columnas a la matriz. Sugerencia: una column de $1$ y una fila de datos de un juego de tu preferencia.
+# Evaluación
 
-1. Agregar columna de $1$.
+baskara(a=1, b=8, c=3)
+```
 
-1. Agregar fila con los datos de un video de tu preferencia.
+3.  Simulación
 
-1. Eliminar filas y columnas de la matriz.
+*   Obtenga una muestra aleatoria normal, de cualquier tamaño, de media igual a $0$ y varianza igual a $1$.
 
-1. Seleccionar los elementos de la matriz.
+```{r}
+set.seed(1)
+muestra_aleatoria <- rnorm(n=1000, mean=0, sd=1)
+muestra_aleatoria[1:10]
+muestra_aleatoria[1:10]
+```
 
-1. Convertir la matriz en dataframe y asignas nombres a las columnas.
+*   Para conocer el comportamiento aleatorio de la muestra,
+    +   calcule sus estadísticas y
+    +   genere gráficos.
 
-1. Acceder a los datos del dataframe.
+### Base de datos a emplear en las siguientes dos últimas preguntas
 
-1. Cambiar nombre de dataframe.
-
-1. Seleccionar un elemento del dataframe.
+Utilice la base de datos *games.csv* obtenida de [*Game Recommendations on Stream*](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam).
 
 ## Pregunta 2. Importación de datos
 
-1. Importe datos desde excel y ordenelos con la función _order()_, de preferencia para la variable _Price_final_
+1.  Importe la base de datos
 
-1. Mostrar el dataframe ordenado de manera ascenente y descendente
+* Inicializando el proyecto
+```{r}
+library(here)
+here_base_datos <- here("trabajo_final", "data_raw", "games.csv")
+```
 
-1. Calcular el resumen estadístico de los datos con la función correspondiente
+```{r}
+library(readr)
+base_datos <- read.csv(here_base_datos)
+```
 
-1. Realizar las gráficas
+2.  Ordene la base de datos ascendente y descendentemente respecto a la variable *Price_final*
 
-## Pregunta 3. Programación
+* Inspección de la variables *price_final*
+```{r}
+summary(base_datos$price_final)
+```
 
-1. Implemente y evalúe una función que multiple dos vectores.
 
-1. Implemente y evalúe una función para la fórmula de baskara.
+* Orden inicial de la base de datos
+```{r}
+head(base_datos, n=10)
+```
 
-3. Simulación
+* Orden ascendente
+```{r}
+orden_ascendente <- order(base_datos$price_final)
+base_datos_ascendente <- base_datos[orden_ascendente,]
+head(base_datos_ascendente, n=10)
+```
+* Orden descendente
+```{r}
+orden_descendente <- order(-base_datos$price_final)
+base_datos_descendente <- base_datos[orden_descendente,]
+head(base_datos_descendente)
+```
 
-  - Obtenga una muestra aleatoria normal, de cualquier tamaño, de media igual a $0$ y varianza igual a $1$.
-  - Para conocer el comportamiento aleatorio de la muestra,
-    - Calcule sus estadísticas.
-    - Genere gráficos.
+3.  Obtenga un resumen estadístico
+
+4.  Obtenga gráficas
+
+## Pregunta 1. Esctructura de datos
+
+1.  Crear vectores con los títulos de la dataset.
+
+2.  Crear vector numérico con el precio final de los videojuegos.
+
+3.  Crear una condición lógica de precios bajos, ejemplo: precios menores a $10.99$.
+
+4.  Sumar $5$ al vector creado.
+
+5.  Dividir la puntuación entre $2$.
+
+6.  Calcular la media, moda, max, min de los datos de tipo numérico. Verificar con la función *class*.
+
+7.  Crear un dataframe de $13$ columnas con la base de dats y guardar en una nueva variable.
+
+8.  Agregar filas y columnas a la matriz. Sugerencia: una column de $1$ y una fila de datos de un juego de tu preferencia.
+
+9.  Agregar columna de $1$.
+
+10. Agregar fila con los datos de un video de tu preferencia.
+
+11. Eliminar filas y columnas de la matriz.
+
+12. Seleccionar los elementos de la matriz.
+
+13. Convertir la matriz en dataframe y asignas nombres a las columnas.
+
+14. Acceder a los datos del dataframe.
+
+15. Cambiar nombre de dataframe.
+
+16. Seleccionar un elemento del dataframe.
