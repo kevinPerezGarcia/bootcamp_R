@@ -12,6 +12,14 @@ execute:
 editor: visual
 ---
 
+## Inicialización del proyecto
+
+### Carga de librerías
+```{r}
+library(ggplot2)
+```
+
+
 ## Pregunta 3. Programación
 
 1.  Implemente y evalúe una función que multiple dos vectores.
@@ -56,9 +64,72 @@ muestra_aleatoria[1:10]
 ```
 
 -   Para conocer el comportamiento aleatorio de la muestra,
-    -   calcule sus estadísticas y
-    -   genere gráficos.
+    -   calcule sus estadísticas
+      -   Medidas de tendencia central
+```{r}
+# Media
+mean(muestra_aleatoria)
+# Mediana
 
+median(muestra_aleatoria)
+ 
+```
+      -   Medidas de dispersión
+```{r}
+# Desviación estándar
+sd(muestra_aleatoria)
+
+# Coeficiente de variación
+sd(muestra_aleatoria) / mean(muestra_aleatoria)
+
+# Rango
+range(muestra_aleatoria)
+
+# Rango intercuartílico
+IQR(muestra_aleatoria)
+```
+      -   Medidas de posición
+```{r}
+# Máximo
+max(muestra_aleatoria)
+
+# Mínimo
+min(muestra_aleatoria)
+
+# Cuartiles
+quantile(muestra_aleatoria)
+
+# Cuantiles
+quantile(muestra_aleatoria, 0.10)
+```
+      -   Varias medidas
+```{r}
+summary(muestra_aleatoria)
+
+pastecs::stat.desc(iris)
+
+psych::describe(muestra_aleatoria)
+```
+      
+    -   genere gráficos.
+    
+Convirtiendo a datafram
+```{r}
+df <- data.frame(muestra_aleatoria)
+```
+
+    
+      -   Gráfico de cajas    
+```{r}
+ggplot(df, aes(y=muestra_aleatoria)) +
+  geom_boxplot()
+```
+      -   Gráfico de violín
+```{r}
+ggplot(df, aes(y=muestra_aleatoria, x="")) +
+  geom_violin()
+```
+      
 ### Base de datos a emplear en las siguientes dos últimas preguntas
 
 Utilice la base de datos *games.csv* obtenida de [*Game Recommendations on Stream*](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam).
@@ -116,6 +187,7 @@ head(base_datos_descendente)
 ## Pregunta 1. Esctructura de datos
 
 1.  Cree vectores con los títulos de la base de datos.
+
 ```{r}
 titulos <- names(base_datos)
 titulos
@@ -126,8 +198,8 @@ precios <- c("price_final", "price_original", "discount")
 ademas <- c("steam_deck", "user_reviews", "rating", "positive_ratio")
 ```
 
-
 2.  Cree vector numérico con el precio final de los videojuegos.
+
 ```{r}
 precio_original <- base_datos$price_final/(1 - base_datos$discount / 100)
 class(precio_original)
@@ -136,24 +208,24 @@ summary(base_datos$price_original)
 summary(precio_original)
 ```
 
-
 3.  Crear una condición lógica de precios bajos, ejemplo: precios menores a $10.99$.
+
 ```{r}
 precio_bajo <- ifelse(precio_final < 10.99, T, F)
 class(precio_bajo)
 head(precio_bajo)
 ```
 
-
 4.  Sumar $5$ al vector creado.
+
 ```{r}
 precio_bajo <- precio_bajo + 5
 class(precio_bajo)
 head(precio_bajo)
 ```
 
-
 5.  Dividir la puntuación entre $2$.
+
 ```{r}
 head(base_datos$rating)
 nuevo_rating <- rating / 2
@@ -162,6 +234,7 @@ nuevo_rating <- rating / 2
 6.  Calcule la media, moda, max, min de los datos de tipo numérico. Verificar con la función *class*.
 
 Verificamos el tipo de dato de cada variable de la base de datos
+
 ```{r}
 titulos
 length(titulos)
@@ -170,7 +243,9 @@ for(n in 1:13){
   print(class(base_datos[,n]))
 }
 ```
+
 Antes de realizar el análisis descriptivo, tenemos que crear una función que nos retorno la moda de un vector de elementos
+
 ```{r}
 get_mode <- function(f) {
   uf <- unique(f)
@@ -181,21 +256,26 @@ get_mode <- function(f) {
 
 Luego, realizamos el análisis descriptivo de las variables numéricas
 
-* Para la variable *price_final*
+-   Para la variable *price_final*
+
 ```{r}
 mean(base_datos$price_final)
 max(base_datos$price_final)
 min(base_datos$price_final)
 get_mode(base_datos$price_final)
 ```
-* Para la variable *price_original*
+
+-   Para la variable *price_original*
+
 ```{r}
 mean(base_datos$price_original)
 max(base_datos$price_original)
 min(base_datos$price_original)
 get_mode(base_datos$price_original)
 ```
-* Para la variable *discount*
+
+-   Para la variable *discount*
+
 ```{r}
 mean(base_datos$discount)
 max(base_datos$discount)
@@ -204,6 +284,7 @@ get_mode(base_datos$discount)
 ```
 
 7.  Crear una matriz con la base de datos y guardarla en una nueva variable.
+
 ```{r}
 matriz <- cbind(base_datos$price_final,base_datos$price_original,base_datos$discount)
 head(matriz)
@@ -211,7 +292,8 @@ head(matriz)
 
 8.  Agregar filas y columnas a la matriz.
 
-* Agregando columna de $1$.
+-   Agregando columna de $1$.
+
 ```{r}
 dim(matriz)
 vector1 <- rep.int(c(1),46068)
@@ -220,7 +302,8 @@ matriz <- cbind(matriz,vector1)
 dim(matriz)
 ```
 
-* Agregando fila
+-   Agregando fila
+
 ```{r}
 vector_fila <- c(20.00, 14.00, 0, 1)
 
@@ -229,16 +312,18 @@ matriz <- rbind(matriz, vector_fila)
 dim(matriz)
 ```
 
-9. Eliminar columnas y filas de la matriz.
+9.  Eliminar columnas y filas de la matriz.
 
-* Eliminando columnas
+-   Eliminando columnas
+
 ```{r}
 head(matriz)
 matriz <- matriz[,-4]
 head(matriz)
 ```
 
-* Eliminando filas
+-   Eliminando filas
+
 ```{r}
 dim(matriz)
 matriz <- matriz[-46071,]
@@ -247,11 +332,14 @@ dim(matriz)
 
 10. Seleccionar los elementos de la matriz.
 
-* Las 10 primeras filas de la primera columna
+-   Las 10 primeras filas de la primera columna
+
 ```{r}
 matriz[1:10,1]
 ```
-* El elemento en la fila 20 y columna 3
+
+-   El elemento en la fila 20 y columna 3
+
 ```{r}
 matriz[20,3]
 ```
