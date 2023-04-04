@@ -71,3 +71,4 @@
   * v4.0.0-RELEASE
   * v5.0.0-WORKING
   * v5.0.0-RELEASE
+  * v6.0.0-RELEASE
