@@ -15,10 +15,10 @@ editor: visual
 ## Inicialización del proyecto
 
 ### Carga de librerías
+
 ```{r}
 library(ggplot2)
 ```
-
 
 ## Pregunta 3. Programación
 
@@ -64,17 +64,21 @@ muestra_aleatoria[1:10]
 ```
 
 -   Para conocer el comportamiento aleatorio de la muestra,
+
     -   calcule sus estadísticas
-      -   Medidas de tendencia central
+
+        -   Medidas de tendencia central
+
 ```{r}
 # Media
 mean(muestra_aleatoria)
-# Mediana
 
+# Mediana
 median(muestra_aleatoria)
- 
-```
-      -   Medidas de dispersión
+    ```
+
+        -   Medidas de dispersión
+
 ```{r}
 # Desviación estándar
 sd(muestra_aleatoria)
@@ -88,7 +92,9 @@ range(muestra_aleatoria)
 # Rango intercuartílico
 IQR(muestra_aleatoria)
 ```
-      -   Medidas de posición
+
+        -   Medidas de posición
+
 ```{r}
 # Máximo
 max(muestra_aleatoria)
@@ -102,7 +108,9 @@ quantile(muestra_aleatoria)
 # Cuantiles
 quantile(muestra_aleatoria, 0.10)
 ```
-      -   Varias medidas
+
+        -   Varias medidas
+
 ```{r}
 summary(muestra_aleatoria)
 
@@ -110,26 +118,29 @@ pastecs::stat.desc(iris)
 
 psych::describe(muestra_aleatoria)
 ```
-      
+
     -   genere gráficos.
-    
-Convirtiendo a datafram
+
+Convirtiendo a dataframe
+
 ```{r}
 df <- data.frame(muestra_aleatoria)
 ```
 
-    
-      -   Gráfico de cajas    
+        -   Gráfico de cajas    
+
 ```{r}
 ggplot(df, aes(y=muestra_aleatoria)) +
   geom_boxplot()
 ```
-      -   Gráfico de violín
+
+        -   Gráfico de violín
+
 ```{r}
 ggplot(df, aes(y=muestra_aleatoria, x="")) +
   geom_violin()
 ```
-      
+
 ### Base de datos a emplear en las siguientes dos últimas preguntas
 
 Utilice la base de datos *games.csv* obtenida de [*Game Recommendations on Stream*](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam).
@@ -182,7 +193,80 @@ head(base_datos_descendente)
 
 3.  Obtenga un resumen estadístico
 
+-   Medidas de tendencia central
+
+```{r}
+# Media
+mean(base_datos$price_final)
+
+# Mediana
+median(base_datos$price_final)
+```
+
+-   Medidas de dispersión
+
+```{r}
+# Desviación estándar
+sd(base_datos$price_final)
+
+# Coeficiente de variación
+sd(base_datos$price_final) / mean(base_datos$price_final)
+
+# Rango
+range(base_datos$price_final)
+
+# Rango intercuartílico
+IQR(base_datos$price_final)
+```
+
+-   Medidas de posición
+
+```{r}
+# Máximo
+max(base_datos$price_final)
+
+# Mínimo
+min(base_datos$price_final)
+
+# Cuartiles
+quantile(base_datos$price_final)
+
+# Cuantiles
+quantile(base_datos$price_final, 0.10)
+```
+
+-   Varias medidas
+
+```{r}
+summary(base_datos$price_final)
+
+pastecs::stat.desc(base_datos$price_final)
+
+psych::describe(base_datos$price_final)
+```
+
 4.  Obtenga gráficas
+
+-   Histograma
+
+```{r}
+ggplot(base_datos, aes(x=price_final)) +
+  geom_histogram()
+```
+
+-   Diagrama de cajas
+
+```{r}
+ggplot(base_datos, aes(y=price_final)) +
+  geom_boxplot()
+```
+
+-   Gráfico de violín
+
+```{r}
+ggplot(base_datos, aes(x="", y=price_final)) +
+  geom_violin()
+```
 
 ## Pregunta 1. Esctructura de datos
 
@@ -211,7 +295,7 @@ summary(precio_original)
 3.  Crear una condición lógica de precios bajos, ejemplo: precios menores a $10.99$.
 
 ```{r}
-precio_bajo <- ifelse(precio_final < 10.99, T, F)
+precio_bajo <- ifelse(base_datos$price_final < 10.99, T, F)
 class(precio_bajo)
 head(precio_bajo)
 ```
@@ -224,11 +308,11 @@ class(precio_bajo)
 head(precio_bajo)
 ```
 
-5.  Dividir la puntuación entre $2$.
+5.  Dividir el vector creado entre $2$.
 
 ```{r}
-head(base_datos$rating)
-nuevo_rating <- rating / 2
+head(base_datos$precio_bajo)
+nuevo_rating <- base_datos$precio_bajo / 2
 ```
 
 6.  Calcule la media, moda, max, min de los datos de tipo numérico. Verificar con la función *class*.
