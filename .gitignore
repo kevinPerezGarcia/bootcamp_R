@@ -39,6 +39,7 @@ vignettes/*.pdf
 */*_files
 */image
 */*.html
+*/*.yml
 
 # base de datos utilizada en el trabajo final
 trabajo_final/data_raw/games.csv
