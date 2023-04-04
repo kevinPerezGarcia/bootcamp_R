@@ -2,15 +2,14 @@
 
 ## Datos generales
 
-* Institución:                              Data Science
-* Profesora:                                Katerine Zúniga Lastra
+* Institución:                              [Data Science Research Peru](https://www.datascience.pe/)
+* Profesora:                                [Katerine Zúniga Lastra](https://www.linkedin.com/in/katerine-zuniga-728910189/)
 * Duración:                                 Del 21 de febrero al 04 de abril del 2023
 * Exposición opcional del trabajo final:    04 de abril
 * Cierre del bootcamp de R:                 14 de abril, con emisión de certificado
 
 ## Adchivos adjuntos
 
-* brochure.pdf
 * trabajo_final/trabajo_final.pdf
 
 ## Contenido y agenda
@@ -72,3 +71,4 @@
   * v5.0.0-WORKING
   * v5.0.0-RELEASE
   * v6.0.0-RELEASE
+  * v6.0.1-HOTFIX
