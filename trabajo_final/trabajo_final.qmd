@@ -112,7 +112,7 @@ psych::describe(muestra_aleatoria)
 ```
 
     -   genere gráficos.
-    
+
 ```{r}
 # Cargando librerías
 library(ggplot2)
