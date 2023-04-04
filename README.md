@@ -2,9 +2,11 @@
 
 ## Datos generales
 
-* Institución:  Data Science
-* Profesora:    Katerine Zúniga Lastra
-* Duración:     del 21 de febrero al 04 de abril
+* Institución:                              Data Science
+* Profesora:                                Katerine Zúniga Lastra
+* Duración:                                 Del 21 de febrero al 04 de abril del 2023
+* Exposición opcional del trabajo final:    04 de abril
+* Cierre del bootcamp de R:                 14 de abril, con emisión de certificado
 
 ## Adchivos adjuntos
 
@@ -27,29 +29,23 @@
     3. 09-Mar. [dataframes](https://www.youtube.com/watch?v=oZz8Q7kq2LQ) ([Laboratorio](https://www.youtube.com/watch?v=exRpDn016ig))
     4. 14-Mar [listas](https://www.youtube.com/watch?v=KW9mOci_lgY) ([Laboratorio](https://www.youtube.com/watch?v=KpDRaKwnPlQ))
     5. 16-Mar [instalación de paquetes](https://www.youtube.com/watch?v=f2Z9uHCGnxg) ([Laboratorio](https://www.youtube.com/watch?v=CEZMxipH6yg))
-2. 21-Mar. [Importación de Datos de Excel](https://www.youtube.com/watch?v=aRf_ss16wnI&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=yrbH8Pf5ClU&ab_channel=Cecat4.0DSRP))
-3. 23-Mar. Programación: funciones, estructuras de control secuenciales y cíclicas ([Laboratorio](https://www.youtube.com/watch?v=5MWZAPolKMs&ab_channel=Cecat4.0DSRP))
+1. 21-Mar. [Importación de Datos de Excel](https://www.youtube.com/watch?v=aRf_ss16wnI&ab_channel=Cecat4.0DSRP) ([Laboratorio](https://www.youtube.com/watch?v=yrbH8Pf5ClU&ab_channel=Cecat4.0DSRP))
+1. 23-Mar. Programación: funciones, estructuras de control secuenciales y cíclicas ([Laboratorio](https://www.youtube.com/watch?v=5MWZAPolKMs&ab_channel=Cecat4.0DSRP))
 
 ### Clases sincrónicas
 
 * 07-Mar. [Lenguaje R, una experiencia en el procesamiento de información presupuestal](https://www.youtube.com/watch?v=eBmU29D_IG4)
-* 14-Mar. Consultas sobre el curso y el trabajo final
-* 16-Mar. Métodos estadísticos para modelos de pronóstico
+* 17-Mar. [Métodos estadísticos para modelos de pronóstico](https://www.youtube.com/watch?v=vHiFFOtokIg&ab_channel=Cecat4.0DSRP)
 * 21-Mar. Métodos de segmentación de clientes con Machine Learning
-* 28-Mar. Gráficas
-    1. diagrama de dispersión
-    1. gráfico de barras
-    1. gráfico de cajas
-    1. otros gráficos
-* 04-Abr. Exposición opcional del trabajo final
-* 14-Abr. Emisión de certificado (cierre del bootcamp de R)
+* 28-Mar. [Gráficas](https://www.youtube.com/watch?v=At-_QveB4Lo&ab_channel=Cecat4.0DSRP)
 
 ## Trabajo final
 
 * Documento: *trabajo_final/trabajo_final.pdf*
 * Base de datos: *games.csv*, esta base de datos es una de tres que conforman una más grande: [_Game Recommendations on Steam_](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=users.csv).
-* Último día de entrega: 4 de abril
+* Último día de entrega: 04 de abril
 * Modalidad de entrega: subir script o enlace github a classroom
+* Ceremonia de graduación: 04 de abril, 07:00 pm
 
 ## Historial de versiones
   * v0.0.1
@@ -73,3 +69,5 @@
   * v3.0.0-RELEASE
   * v4.0.0-WORKING
   * v4.0.0-RELEASE
+  * v5.0.0-WORKING
+  * v5.0.0-RELEASE
