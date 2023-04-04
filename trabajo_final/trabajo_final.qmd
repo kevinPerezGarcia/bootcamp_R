@@ -12,14 +12,6 @@ execute:
 editor: visual
 ---
 
-## Inicialización del proyecto
-
-### Carga de librerías
-
-```{r}
-library(ggplot2)
-```
-
 ## Pregunta 3. Programación
 
 1.  Implemente y evalúe una función que multiple dos vectores.
@@ -75,7 +67,7 @@ mean(muestra_aleatoria)
 
 # Mediana
 median(muestra_aleatoria)
-    ```
+```
 
         -   Medidas de dispersión
 
@@ -120,6 +112,11 @@ psych::describe(muestra_aleatoria)
 ```
 
     -   genere gráficos.
+    
+```{r}
+# Cargando librerías
+library(ggplot2)
+```
 
 Convirtiendo a dataframe
 
@@ -215,6 +212,8 @@ sd(base_datos$price_final) / mean(base_datos$price_final)
 # Rango
 range(base_datos$price_final)
 
+max(base_datos$price_final) - min(base_datos$price_final)
+
 # Rango intercuartílico
 IQR(base_datos$price_final)
 ```
@@ -231,7 +230,7 @@ min(base_datos$price_final)
 # Cuartiles
 quantile(base_datos$price_final)
 
-# Cuantiles
+# Percentil 10
 quantile(base_datos$price_final, 0.10)
 ```
 
@@ -311,8 +310,8 @@ head(precio_bajo)
 5.  Dividir el vector creado entre $2$.
 
 ```{r}
-head(base_datos$precio_bajo)
-nuevo_rating <- base_datos$precio_bajo / 2
+nuevo_precio_bajo <- precio_bajo / 2
+head(nuevo_precio_bajo)
 ```
 
 6.  Calcule la media, moda, max, min de los datos de tipo numérico. Verificar con la función *class*.
@@ -326,6 +325,8 @@ for(n in 1:13){
   print(titulos[n])
   print(class(base_datos[,n]))
 }
+
+sapply(base_datos, class)
 ```
 
 Antes de realizar el análisis descriptivo, tenemos que crear una función que nos retorno la moda de un vector de elementos
@@ -430,8 +431,35 @@ matriz[20,3]
 
 11. Convertir la matriz en dataframe y asignas nombres a las columnas.
 
+```{r}
+df <- data.frame(matriz)
+names(df) <- c("price_final", "price_original", "discount")
+head(df)
+```
+
 12. Acceder a los datos del dataframe.
+
+```{r}
+View(df)
+head(df)
+```
 
 13. Cambiar nombre de dataframe.
 
+```{r}
+marco_datos <- df
+```
+
 14. Seleccionar un elemento del dataframe.
+
+-   Dies primeras observaciones de la primera columna
+
+```{r}
+df[1:10,1]
+```
+
+-   Dies primeras observaciones de todas las columnas a excepción de la última
+
+```{r}
+df[1:10,-3]
+```
