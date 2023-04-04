@@ -45,6 +45,7 @@
 * Base de datos: *games.csv*, esta base de datos es una de tres que conforman una más grande: [_Game Recommendations on Steam_](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=users.csv).
 * Último día de entrega: 04 de abril
 * Modalidad de entrega: subir script o enlace github a classroom
+* Ceremonia de graduación: 04 de abril, 07:00 pm
 
 ## Historial de versiones
   * v0.0.1
@@ -69,3 +70,4 @@
   * v4.0.0-WORKING
   * v4.0.0-RELEASE
   * v5.0.0-WORKING
+  * v5.0.0-RELEASE
