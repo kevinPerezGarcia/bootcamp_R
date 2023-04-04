@@ -97,7 +97,7 @@ min(muestra_aleatoria)
 # Cuartiles
 quantile(muestra_aleatoria)
 
-# Cuantiles
+# Percentil 10
 quantile(muestra_aleatoria, 0.10)
 ```
 
@@ -113,8 +113,8 @@ psych::describe(muestra_aleatoria)
 
     -   genere gráficos.
 
+Cargando librería
 ```{r}
-# Cargando librerías
 library(ggplot2)
 ```
 
